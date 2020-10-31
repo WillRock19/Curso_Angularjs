@@ -10,13 +10,7 @@ angular.module("minhasDiretivas", []).directive("meuPainel", function () {
 
   ddo.transclude = true; //vai dizer ao ângular que qualquer elemento passado dentro desta diretiva pelo pai deverá ser adicionado como um element dentro do template quando este for renderizado
 
-  ddo.template =
-    '<div class="panel panel-default">' +
-    '<div class="panel-heading">' +
-    '<h3 class="panel-title">{{titulo}}</h3>' +
-    "</div>" +
-    '<div class="panel-body" ng-transclude></div>' + //Adiciono o ng-transclude aqui para indicar ONDE os elementos que eu quero fazer transclude serão colocados dentro do meu template
-    "</div>";
+  ddo.templateUrl = "js/directives/meu-painel.html"; //Importando o template ao invés de escrever aqui
 
   return ddo;
 });
