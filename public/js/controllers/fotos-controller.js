@@ -1,5 +1,4 @@
 angular.module("alurapic").controller("FotosController", function ($scope) {
-  //$scope is the scope of the application. It is beying injected in the controller, and whe can use it to make the internal variables be available to external components
   $scope.foto = {
     titulo: "torre-negra",
     url:
