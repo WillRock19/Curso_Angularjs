@@ -3,12 +3,12 @@ angular
   .controller("FotosController", function ($scope, $http) {
     $scope.fotos = [];
 
-    const promise = $http.get("v1/fotos");
-    promise
-      .then(function (retorno) {
-        $scope.fotos = retorno.data;
+    $http
+      .get("v1/fotos")
+      .success(function (fotos) {
+        $scope.fotos = fotos;
       })
-      .catch(function (error) {
-        console.log(error);
+      .error(function (erro) {
+        console.log(erro);
       });
   });
