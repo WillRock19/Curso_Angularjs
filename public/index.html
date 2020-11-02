@@ -32,7 +32,7 @@
       </div>
       <div class="row">
         <meu-painel
-          ng-repeat="foto in fotos | filter: filtro"
+          ng-repeat="foto in fotos | filter: {titulo: filtro}"
           titulo="{{foto.titulo}}"
           class="col-md-2 painel-animado"
         >
