@@ -5,3 +5,11 @@
   -o-transform: scale(0.1);
   transform: scale(0.1);
 }
+
+.painel-animado {
+  -moz-transition: transform 0.8s;
+  -webkit-transition: transform 0.8s;
+  -ms-transition: transform 0.8s;
+  -o-transition: transform 0.8s;
+  transition: transform 0.8s;
+}
