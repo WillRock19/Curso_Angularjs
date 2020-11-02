@@ -6,6 +6,7 @@
     <title>Alurapic</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/efeitos.css" />
     <script src="js/lib/angular.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/controllers/fotos-controller.js"></script>
@@ -31,7 +32,7 @@
         <meu-painel
           ng-repeat="foto in fotos | filter: filtro"
           titulo="{{foto.titulo}}"
-          class="col-md-2"
+          class="col-md-2 painel-animado"
         >
           <img
             class="img-responsive center-block"
